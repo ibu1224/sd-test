@@ -2,7 +2,7 @@ annotations:
   screwdriver.cd/chainPR: true
 
 shared:
-  image: node:10
+  image: node:12
  
 jobs:
   build1:
