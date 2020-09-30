@@ -1,6 +1,6 @@
 annotations:
   screwdriver.cd/chainPR: true
-  screwdriver.cd/pipelineDescription:|
+  screwdriver.cd/pipelineDescription: |
     Hi.
 
 shared:
