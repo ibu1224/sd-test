@@ -5,7 +5,7 @@ jobs:
   build1:
     requires: [ ~commit, ~pr ]
     steps:
-      - hello: echo "$PR_BRANCH_NAME"
+      - hello: 
   build2:
     requires: [ build1 ]
     steps:
