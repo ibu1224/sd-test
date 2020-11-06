@@ -1,8 +1,3 @@
-annotations:
-  screwdriver.cd/chainPR: true
-  screwdriver.cd/pipelineDescription: |
-    Hi.
-
 shared:
   image: node:12
  
