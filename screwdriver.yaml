@@ -5,7 +5,7 @@ jobs:
   build1:
     requires: [ ~commit, ~pr ]
     steps:
-      - hello: 
+      - hello: sleep 100
   build2:
     requires: [ build1 ]
     steps:
