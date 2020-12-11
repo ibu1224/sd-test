@@ -4,9 +4,6 @@ shared:
 jobs:
   build1:
     requires: [ ~commit, ~pr ]
+    sourcePaths: ["!test/text.txt", "screwdriver.yaml"]
     steps:
-      - hello: sleep 100
-  build2:
-    requires: [ build1 ]
-    steps:
-      - hello: echo "Hello build2"
+      - echo "this is build1"
