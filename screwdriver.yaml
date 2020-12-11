@@ -6,4 +6,4 @@ jobs:
     requires: [ ~commit, ~pr ]
     sourcePaths: ["screwdriver.yaml"]
     steps:
-      - echo "this is build1"
+      - echo "this is buil1"
