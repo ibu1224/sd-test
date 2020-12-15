@@ -2,8 +2,15 @@ shared:
   image: node:12
  
 jobs:
-  build1:
+  OnlyExclude:
     requires: [ ~commit, ~pr ]
-    sourcePaths: ["!test/"]
+    sourcePaths: ["!test/", "!src/test"]
     steps:
       - echo "this is build1"
+  
+  editScrewdriver:
+    requires: [ ~commit, ~pr ]
+    sourcePaths: ["screwdriver.yaml"]
+    steps:
+      - echo "edit"
+  
