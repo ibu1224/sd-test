@@ -4,6 +4,6 @@ shared:
 jobs:
   build1:
     requires: [ ~commit, ~pr ]
-    sourcePaths: ["screwdriver.yaml"]
+    sourcePaths: ["!src/"]
     steps:
       - echo "this is buil1"
