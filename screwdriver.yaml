@@ -4,6 +4,6 @@ shared:
 jobs:
   build1:
     requires: [ ~commit, ~pr ]
-    sourcePaths: ["!src/"]
+    sourcePaths: ["!test/"]
     steps:
-      - echo "this is buil1"
+      - echo "this is build1"
