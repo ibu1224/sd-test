@@ -1,9 +1,9 @@
 shared:
   image: node:12
- 
+  steps: [echo test]
 jobs:
-  build1:
-    requires: [ ~commit, ~pr ]
-    sourcePaths: ["screwdriver.yaml"]
-    steps:
-      - echo "this is buil1"
+  build-013-test:
+    requires: test
+  build-13-test:
+    requires: test
+  test: {}
