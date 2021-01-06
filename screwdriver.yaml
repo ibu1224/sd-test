@@ -3,7 +3,11 @@ shared:
   steps: [echo test]
 jobs:
   build-013-test:
-    requires: test
+    requires: piyo
   build-13-test:
-    requires: test
-  test: {}
+    requires: piyo
+  piyo: {}
+  
+  test:
+    requires: ~commit
+
