@@ -1,3 +1,5 @@
+annotations:
+  screwdriver.cd/pipelineDescription: test
 shared:
   image: node:12
  
