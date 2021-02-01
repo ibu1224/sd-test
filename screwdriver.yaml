@@ -8,6 +8,6 @@ jobs:
     requires: [ ~commit, ~pr ]
     sourcePaths: ["screwdriver.yaml"]
     steps:
-      - curl -X PUT -H "Authorization: Bearer $SD_TOKEN" -H "Content-Type: application/json" -d "{\"statusMessage\": \"This is test\"}" "${SD_API_URL}builds/${SD_BUILD_ID}"
+      - set-statusMessage: curl -X PUT -H "Authorization: Bearer $SD_TOKEN" -H "Content-Type: application/json" -d "{\"statusMessage\": \"This is test\"}" "${SD_API_URL}builds/${SD_BUILD_ID}"
       - echo "build"
       
