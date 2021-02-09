@@ -6,7 +6,5 @@ shared:
 jobs:
   build1:
     requires: [ ~commit, ~pr ]
-    sourcePaths: ["screwdriver.yaml"]
     steps:
-      - set-statusMessage: 'curl -X PUT -H "Authorization: Bearer $SD_TOKEN" -H "Content-Type: application/json" -d "{\"statusMessage\": \"Error!!\"}" "${SD_API_URL}builds/${SD_BUILD_ID}"'
-      - exit 1
+      - echo "hoge"
