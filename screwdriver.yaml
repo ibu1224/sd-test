@@ -5,9 +5,8 @@ shared:
     image: node:16
  
 jobs:
-  build1:
+  build1-longlonglonglonglonglpnglpnglonglonglongbuild1-longlonglonglonglonglpnglpnglonglonglong:
     description: "This is an example."
-    requires: [ ~commit, ~pr ]
     steps:
       - hello: echo "Hello build1"
   build2:
