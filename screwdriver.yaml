@@ -9,6 +9,11 @@ jobs:
     description: "This is an example."
     steps:
       - hello: echo "Hello build1"
+
+  build2-longlonglonglonglonglpnglpnglonglonglongbuild1-longlonglonglonglonglpnglpnglonglonglong:
+  description: "This is an example."
+  steps:
+    - hello: echo "Hello"
   build2:
     description: "This is a very very long example sentence."
     requires: [ ~commit, ~pr ]
