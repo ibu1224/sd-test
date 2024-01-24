@@ -22,3 +22,7 @@ jobs:
     requires: [ ~commit, ~pr ]
     steps:
       - hello: echo "Hello build2"
+  build4:
+    requires: [ ~commit, ~pr ]
+    steps:
+      - hello: echo "Hello build2"
