@@ -1,2 +1,17 @@
-template: ibu-test/sd-ibu-pipeline-template@latest
-  
+jobs:
+  pipeline-template:
+    template: ibu-test/sd-ibu-pipeline-template@latest
+    
+  build2:
+    description: "This is a very very long example sentence."
+    requires: [ ~commit, ~pr ]
+    steps:
+      - hello: echo "Hello build2"
+  build3:
+    requires: [ ~commit, ~pr ]
+    steps:
+      - hello: echo "Hello build2"
+  build4:
+    requires: [ ~commit, ~pr ]
+    steps:
+      - hello: echo "Hello build2"
